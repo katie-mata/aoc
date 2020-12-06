@@ -1,7 +1,5 @@
 #!/usr/bin/env python3
 
-from functools import reduce
-
 def read_input_file(filename):
     with open(filename, 'r') as f:
         return f.read().strip()
