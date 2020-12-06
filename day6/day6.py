@@ -12,8 +12,7 @@ def create_sets(input):
 def create_intersections(input):
     intersections = []
     for group in input.split('\n\n'):
-        sets = [{char for char in form} for form in group.split('\n')]
-        head, *tail = sets
+        head, *tail = [{char for char in form} for form in group.split('\n')]
         intersections.append(head.intersection(*tail))
 
     return intersections
